@@ -43,7 +43,7 @@ document.write("________________________________________________________________
 document.write('<h2 style="color: blue;">String literal/ Template String (Usando a crase)</h2><br>');
 
 // 2ª Digitação (Aqui)
-document.write(`Eu sou o: <strong>${nome}</strong> e em: <strong>${ano} </strong> estou no estudando no curso <strong>${curso} </strong>.<br> `)
+document.write(`Eu sou o: <strong>${nome}</strong> e em: <strong>${ano} </strong> estou estudando no curso <strong>${curso} </strong>.<br> `)
 
 document.write("__________________________________________________________________<br>");
 
