@@ -38,13 +38,23 @@ Função Seta/Flecha (Arrow Function) */
 let exemplo3 = () =>
     document.write("Arrow Function <br>")
 
-exemplo3
-
+exemplo3();
 // _______________________ 3B
 
+// Função para dobrar o valor 
+function dobra(valor) {
+        return valor * 2;
+}
 
-// 3ª Digitação (Aqui)
+document.write( dobra(10));
+document.write("<br>");
 
+// Função para dobrar o valor (Sintaxe Arrow Function)
+
+let dobraB = valor => valor *300;
+
+document.write( dobraB(10));
+document.write("<br>");
 
 // ________________________________________________________________________
 
@@ -87,8 +97,21 @@ let preco =1250;
 let desconto = 77.88;
 let precoFinal = preco - desconto;
 
+// Formatar para Dólar $
+function formataMoeda(valor) {
+        return valor.toLocaleString ('en', {
+            style:'currency', currency: 'USD'
+        });
 
-// 6ª Digitação (Aqui)
+}
+
+// Formatar para Dólar $
+let formataValor = valor => {
+    return valor.toLocaleString ('pt-br', {
+        style:'currency', currency: 'BRL'
+    });
+
+}
 
 
 document.write( formataMoeda(preco) );
