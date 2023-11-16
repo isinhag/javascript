@@ -1,0 +1,190 @@
+/* Gerais */
+
+* {
+    font-family: Helvetica; /* Define a família de fontes para todos os elementos */
+    padding: 0; /* Remove preenchimento padrão de todos os elementos */
+    margin: 0; /* Remove margem padrão de todos os elementos */
+    box-sizing: border-box; /* Define o modelo de caixa para todos os elementos */
+}
+
+html,
+body {
+    height: 100%; /* Define a altura total para o elemento HTML e corpo */
+    background-color: #eceff1; /* Define a cor de fundo para o HTML e o corpo */
+    transition: 0.3; /* Adiciona uma transição suave de 0.3s para mudanças de estilo */
+}
+
+/* Corpo */
+
+input[type="checkbox"] {
+    display: none; /* Oculta os inputs do tipo checkbox */
+}
+
+.bi {
+    font-size: 1.3rem; /* Define o tamanho da fonte para elementos com a classe .bi */
+    cursor: pointer; /* Define um cursor de ponteiro (mãozinha) quando o mouse passa sobre eles */
+}
+
+.bi-moon {
+    display: none; /* Inicialmente, oculta elementos com a classe .bi-moon */
+}
+
+header {
+    display: flex; /* Define o display flex para o elemento principal */
+    justify-content: space-between; /* Alinha os itens no cabeçalho com espaço entre eles */
+    align-items: center; /* Alinha os itens verticalmente no centro do cabeçalho */
+    background-color: #eceff1; /* Define a cor de fundo do cabeçalho */
+    box-shadow: 0.5px 0.5px 10px 0.5px #000; /* Adiciona uma sombra ao cabeçalho */
+    padding: 1rem 2rem; /* Define o preenchimento superior e inferior (1rem) e esquerda e direita (2rem) */
+    position: relative; /* Define a posição como relativa para posiibilitar posicionamento absoluto de elementos filhos */
+}
+
+main {
+    display: flex; /* Define o display flex para o elemento principal */
+    justify-content: center; /* Centraliza horizontalmente o conteúdo dentro do elemento principal */
+}
+
+.card {
+    margin-top: 4rem; /* Define a margem superior para o elemento com a classe .card */
+    display: flex; /* Define o display flex para o elemento com a classe .card */
+    width: 60%; /* Define a largura do elemento com a classe .card */
+    background-color: #ffffff; /* Define a cor de fundo para o elemento com a classe .card */
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0, 0.3); /* Adiciona uma sombra ao elemento .card */
+}
+
+.card-image {
+    padding: 2rem; /* Define o preeenchimento para o elemento com a classe .card-image */
+    width: 50%; /* Define a largura para o elemento com a classe .card-image */
+    position: relative; /* Define a posição como relativa para possibilitar posicionamento absoluto de elementos filhos */
+    background-color: #eceff1; /* Define a cor de fundo para o elemento com a classe .card-image */
+    overflow: visible; /* Permite que o conteúdo ultrapasse os limites do elemento */
+}
+
+.card-image span {
+    font-size: 5rem; /* Define o tamanho da fonte para elementos <span> dentro de .card-image  */
+    font-weight: 900; /* Define o peso da fonte como 900 (negrito) */
+}
+
+.card img {
+    width: 130%; /* Define a largura da imagem em 130% do tamanho do elemento pai */
+    transform: rotate(-25deg); /* Rotaciona a imagem em -25 graus */
+    position: absolute; /* Define a posição como absoluta para posicionar a imagem em relação ao elemento pai */
+    right: -1rem; /* Define a distância da direita como -1rem */
+    top: 10rem; /* Define a distância do topo como 10rem */
+}
+
+.card-details {
+    width: 50%; /* Define a largura para o elemento com a classe .card-details */
+    padding: 2rem; /* Define o preenchimento para o elemento com a classe .card-details */
+}
+
+.card-details h2 {
+    font-size: 3rem; /* Define o tamanho da fonte para elementos <h2> dentro de .card-details */
+    margin-bottom: 1rem; /* Define a margem inferior como 1rem */
+}
+
+.subtitle {
+    color: #444; /* Define a cor do texto para elementos com a classe. subtitle */
+    text-transform: uppercase; /* Transforma o texto em maiúsculas */
+    font-weight: bold; /* Define o peso da fonte como negrito */
+    margin-bottom: 1rem; /* Define a margem inferior como 1rem */
+}
+
+.description {
+    line-height: 1.6rem; /* Define a alytura da linha como 1.6rem */
+    margin-bottom: 2rem; /* Define a margem inferior como 2rem */
+}
+
+.price-container {
+    display: flex; /* Define o display flex para o container de preços */
+    justify-content: space-between; /* Alinha os itens no container com espaço entre eles */
+}
+
+.price {
+    font-weight: 900; /* Define o peso da fonte como 900 (negrito) */
+    font-size: 2rem; /* Define o tamanho da fonte como 2rem */
+}
+
+.btn {
+    background-color: #444; /* Define a cor do texto para elementos com a classe .subtitle */
+    width: 7rem; /* Define a largura como 7rem */
+    height: 3rem; /* Define a altura como 3rem */
+    border: none; /* Remove a borda */
+    border-radius: 3rem; /* Define o raio de borda como 3rem para arredondamento */
+    color: #fff; /* Define a cor do texto como branco */
+    font-weight: bold; /* Define o peso da fonte como negrito */
+    text-transform: uppercase; /* Transforma o texto em maiúsculas */
+    cursor: pointer; /* Define um cursor de ponteiro (mãozinha) quando o mouse passa sobre eles */
+}
+
+.btn:hover {
+    background-color: #555; /* Define a cor de fundo ao passar o mouse sobre elementos com a classe .btn */
+}
+
+/* _______________________ */
+/* Tema escuro */
+
+.dark,
+.dark header {
+    background-color: #263238; /* Define a cor de fundo para o modo escuro */
+    color: #ffff; /* Define a cor do texto para o modo escuro */
+}
+
+.dark .bi-sun {
+    display: none; /* Oculta elementos com a classe .bi-sun no modo escuro */
+}
+
+.dark .bi-moon {
+    display: block; /* Exibe elementos com a classe bi-moon no modo escuro */
+}
+
+.dark .card {
+    background-color: #37474f; /* Define a cor de fundo para .card no modo escuro */
+}
+
+.dark .card-image {
+    background-color: #273035; /* Define a cor de fundo para .card-image no modo escuro */
+}
+
+.dark .subtitle {
+    color: #67b4f3; /* Define a cor do texto para .subtitle no modo escuro */
+}
+
+.dark .description {
+    color: #2196f3; /* Define a cor do texto para .description no modo escuro */
+}
+
+.dark .btn {
+    background-color: #67b4f3; /* Define a cor de fundo para .btn no modo escuro */
+}
+
+
+.dark .btn:hover {
+    background-color: #3d8bcd; /* Define a cor de fundo ao passar o mouse sobre .btn no modo escuro */
+}
+
+/* ________________________ */
+/* Responsividade */
+
+@media screen and (max-width: 992px) {
+    .card {
+        width: 90%;
+        flex-direction: column;
+    }
+
+    .card-image {
+        width: 100%;
+    }
+
+    .card-image img {
+        width: 100%;
+        transform: rotate(0deg);
+        position: relative;
+        right: 0;
+        top: 0;
+    }
+
+    .card-details {
+        width: 100%;
+    }
+}
