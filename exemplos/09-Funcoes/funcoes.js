@@ -19,7 +19,11 @@ document.write('<h2 style="color: blue;">Função nomeada (Tradicional)</h2><br>
 /* Sintaxe 2 (Tradicional)
 Função nomeada */
 
-// 1ª Digitação (Aqui)
+function exemplo2() {
+        document.write("Função nomeada <br>")
+};
+
+exemplo2();
 
 // ________________________________________________________________________
 
@@ -31,9 +35,10 @@ document.write('<h2 style="color: blue;">Arrow Function (Moderna)</h2><br>');
 /* Sintaxe 3 (Moderna)
 Função Seta/Flecha (Arrow Function) */
 
+let exemplo3 = () =>
+    document.write("Arrow Function <br>")
 
-// 2ª Digitação (Aqui)
-
+exemplo3
 
 // _______________________ 3B
 
