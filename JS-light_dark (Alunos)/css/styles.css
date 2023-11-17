@@ -56,7 +56,7 @@ main {
     padding: 2rem; /* Define o preeenchimento para o elemento com a classe .card-image */
     width: 50%; /* Define a largura para o elemento com a classe .card-image */
     position: relative; /* Define a posição como relativa para possibilitar posicionamento absoluto de elementos filhos */
-    background-color: #eceff1; /* Define a cor de fundo para o elemento com a classe .card-image */
+    background-color: #eff7fc; /* Define a cor de fundo para o elemento com a classe .card-image */
     overflow: visible; /* Permite que o conteúdo ultrapasse os limites do elemento */
 }
 
@@ -168,23 +168,23 @@ main {
 
 @media screen and (max-width: 992px) {
     .card {
-        width: 90%;
-        flex-direction: column;
+        width: 90%; /* Define a largura do .card para dispositivos com largura de tela máxima de 992px */
+        flex-direction: column; /* Altera a direção dos elementos fihos para coluna */
     }
 
     .card-image {
-        width: 100%;
+        width: 100%; /* Define a largura do .card-image para 100% */
     }
 
     .card-image img {
-        width: 100%;
-        transform: rotate(0deg);
-        position: relative;
-        right: 0;
-        top: 0;
+        width: 100%; /* Define a largura da imagem para 100% */
+        transform: rotate(0deg); /* Retorna a rotação da imagem para 0 graus */
+        position: relative; /* Define a posição como relativa */
+        right: 0; /* Define a distância da direita como 0 */
+        top: 0; /* Define a distância do topo como 0 */
     }
 
     .card-details {
-        width: 100%;
+        width: 100%;  /* Define a largura do .card-details para 100% */
     }
 }
